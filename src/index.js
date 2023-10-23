@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 5000;
-const { mongoDBPassword } = require('config');
+const { mongoDBPassword } = require('./config');
 const authRouter = require('./routers/authRouter');
 
 const app = express();
